@@ -1,11 +1,17 @@
 {
-  "name": "React",
+  "homepage": "http://blackgolub.github.io/Layout",
+  "name": "my-app",
   "version": "2.0.0",
   "description": "React",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b build"
   },
   "author": "Nikita Chernenko",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
 }
