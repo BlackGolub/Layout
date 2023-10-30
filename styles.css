@@ -73,6 +73,10 @@ nav span pre {
     margin: 40px;
     font-size: 60px;
 }
+
+.block_4 .header {
+	justify-content: start;
+}
 	
 .parag {
 	text-align: center;
@@ -156,6 +160,7 @@ button:hover {
 	border-radius: 30px;
 	color: #727272;
 	transition: 0.5s;
+	cursor: pointer;
 }
 	
 button:active {
@@ -216,6 +221,7 @@ table {
 .second_content { 
 	display: flex;
 	width: auto;
+	margin: 20px;
 }
 	
 .description{
@@ -426,23 +432,18 @@ table {
 	top: 100px;
 	background-color: #a39e89;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 }
 	
 .white_block pre {
-	font-size: 60px;
-	font-weight: bold;
-	justify-self: start;
-	height: 100%;
-	width: 70%;
-	padding: 40px;
+	font-size: 44px;
+    font-weight: bold;
 }
 	
 .column_right {
-	justify-self: end;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	text-align: end;
+	margin: 10px;
 }
 	
 .column_right div{
@@ -482,6 +483,9 @@ table {
 }
 	
 .black_block .column_right{
+	display: flex;
+    flex-direction: column;
+	text-align: start;
 	color: white;
 	opacity: 0.6;
 	height:	250px;
@@ -490,7 +494,7 @@ table {
 	
 .column_right h1{
 	font-size: 35px;
-	margin: 10px;
+	margin-top: -5px;
 }
 	
 .column_right p1{
@@ -630,7 +634,6 @@ table {
 	.white_block pre {
 		display: flex;
 		align-items: center;
-		justify-content: center;
 		font-size: 30px;
 		padding: 0;
 	}
@@ -664,6 +667,7 @@ table {
 
 	.second_content{
 		flex-direction: column;
+		margin: 0 5px;
 	}
 
 	.parag{
@@ -716,7 +720,7 @@ table {
 	}
 		
 	.description{
-		margin: 5px 10px;
+		margin: 0;
 		width: 100%;
 		opacity: 1;
 	}
@@ -751,7 +755,7 @@ table {
 	}
 		
 	.line .text{
-		padding: 10px 5px;
+		padding: 10px 0;
 		width: 100%;
 	}
 
@@ -798,12 +802,12 @@ table {
 
 	.white_block{
 		width: 100%;
+		margin: 0;
 	}
 		
 	.white_block pre {
 		display: flex;
 		align-items: center;
-		justify-content: center;
 		font-size: 30px;
 		padding: 0;
 	}

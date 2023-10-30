@@ -1,11 +1,7 @@
-
-
 const swiper = new Swiper('.swiper', {
-	// Optional parameters
 	direction: 'horizontal',
 	loop: true,
 
-	// If we need pagination
 	pagination: {
 		el: '.pgn',
 		type: 'fraction',
@@ -22,7 +18,6 @@ const swiper = new Swiper('.swiper', {
 		},
 	},
 
-	// Navigation arrows
 	navigation: {
 		nextEl: '.btn-next',
 		prevEl: '.btn-prev',
@@ -47,7 +42,7 @@ window.addEventListener("scroll", function() {
             for (var j = 0; j < numbers.length; j++) {
                 animateNumber(numbers[j]);
             }
-            firstShowFlag = false; // Устанавливаем флаг первого показа в значение false после первого показа блока
+            firstShowFlag = false;
         }
     }
 });
@@ -65,8 +60,8 @@ function isElementInViewport(element) {
 function animateNumber(numberElement) {
     var startValue = 0;
     var endValue = parseInt(numberElement.innerText);
-    var duration = 1000; // 1 second
-    var interval = 10; // update interval in milliseconds
+    var duration = 1000;
+    var interval = 10;
     var step = (endValue - startValue) / (duration / interval);
     var current = startValue;
   
